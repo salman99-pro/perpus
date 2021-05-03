@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %} {% block content %}
+<h1>Beranda Perpustakaan</h1>
+<p>Selamat datang di Aplikasi Peminjaman buku, dikembangkan oleh <em>Salman Al Farizi</em>!</p>
+<h2>Data Buku Terakhir</h2>
+<p>Perpustakaan memiliki sejumlah....</p>
+<ul>
+  <li><strong>Buku:</strong> {{ num_books }}</li>
+  <li><strong>Cetakan:</strong> {{ num_instances }}</li>
+  <li><strong>Tersedia:</strong> {{ num_instances_available }}</li>
+  <li><strong>Penulis:</strong> {{ num_authors }}</li>
+</ul>
+
+<p>Anda Telah mengunjungi halaman ini sebanyak {{ num_visits }} kali{{ num_visits|pluralize }}.</p>
+{% endblock %}
